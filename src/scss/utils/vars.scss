@@ -30,6 +30,18 @@ $maxWidth: 1920px;
   cursor: pointer;
 }
 
+@mixin detailsButton {
+  font-weight: 400;
+  font-size: 2.5rem;
+  height: 8rem;
+  width: 27.5rem;
+  color: $black;
+  background: #FAFAFA;
+  border: 1px solid $black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 @mixin arrow {
   width: 3.5rem;
   height: 3.5rem;
