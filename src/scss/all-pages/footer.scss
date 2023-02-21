@@ -1,0 +1,211 @@
+.footer {
+  &-inner {
+    padding: 2rem $paddingLeft;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &-container {
+    display: flex;
+    background: #0087D2;
+  }
+
+
+  &-blog {
+    display: flex;
+    align-items: center;
+
+    &-button {
+      width: 100px;
+      height: 36px;
+      background: #04C29A;
+      border-radius: 3px;
+      font-family: UZSans;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 15.15px;
+      color: $white;
+    }
+
+    &-text {
+      font-family: UZSans;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 15.15px;
+      color: $white;
+      margin-left: 30px;
+    }
+  }
+
+  &-box {
+    display: flex;
+    margin-top: 35px;
+
+    &-img {
+      width: 196px;
+      height: 236px;
+    }
+
+    &-main {
+      margin-left: 20px;
+
+      &-header {
+        font-family: UZSans;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 29.76px;
+        color: $white;
+        margin-bottom: 30px;
+      }
+
+      &-date {
+        font-family: UZSans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.28px;
+        color: #7CD0FF;
+        margin-bottom: 30px;
+      }
+
+      &-text {
+        font-family: UZSans;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.42px;
+        color: $white;
+      }
+    }
+
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+
+    &-item {
+
+    }
+
+    &-header {
+      font-family: UZSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      color: $white;
+      margin-bottom: 30px;
+    }
+
+    &-date {
+      font-family: UZSans;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.28px;
+      color: #7CD0FF;
+      margin-bottom: 30px;
+    }
+
+    &-hr {
+      height: 1px;
+      background-color: #7CD0FF;
+      margin-bottom: 30px;
+    }
+  }
+
+
+
+  &-contacts {
+    background: #003566;
+    margin-left: 47px;
+
+    &-logo {
+
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      margin-top: 38px;
+
+    }
+
+    &-phone {
+      &-header {
+        font-family: UZSans;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 23.33px;
+        color: $white;
+      }
+
+      &-text {
+        font-family: UZSans;
+        font-size: 15px;
+        font-weight: 350;
+        line-height: 23.33px;
+        color: $white;
+
+      }
+
+    }
+
+    &-regime {
+      color: #01C2FF;
+      margin-top: 1rem;
+
+    }
+
+    &-address {
+      margin-top: 1rem;
+      &-header {
+        font-family: UZSans;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 23.33px;
+        color: $white;
+      }
+
+      &-text {
+        font-family: UZSans;
+        font-size: 15px;
+        font-weight: 350;
+        line-height: 23.33px;
+        color: $white;
+
+      }
+
+    }
+
+    &-email {
+      margin-top: 1rem;
+      &-header {
+        font-family: UZSans;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 23.33px;
+        color: $white;
+
+      }
+
+      &-text {
+        font-family: UZSans;
+        font-size: 15px;
+        font-weight: 350;
+        line-height: 23.33px;
+        color: $white;
+      }
+    }
+
+    &-copyright {
+      font-family: UZSans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 119.03%;
+      color: #01C2FF;
+      margin-top: 57px;
+    }
+
+  }
+}
