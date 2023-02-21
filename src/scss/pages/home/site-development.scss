@@ -1,0 +1,61 @@
+.site-dev {
+  padding: 2rem $paddingLeft;
+
+  &-wrapper {
+    @include widthContainer;
+  }
+
+  &-header{
+    padding: 20px 0;
+  }
+
+  &-info {
+    background-image: url("../../../img/site-development/frame-172-bg.jpg");
+    background-color: #013667;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  &-info-image {
+    height: 99px;
+    width: 475px;
+    background-image: url("../../../img/site-development/scissors.png");
+  }
+
+  &-info-text {
+    font-family: UZSans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 270px;
+    margin-right: 83px;
+  }
+
+  &-info-text span {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  &-text-btn {
+    width: 208px;
+    height: 54px;
+    background-color: #01C2FF;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding:15px 20px;
+  }
+
+  &-arrow-wrap {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url("../../../img/site-development/arrow-right.svg");
+  }
+
+}
