@@ -10,6 +10,7 @@
 
   .bitrix-gallery {
     display: flex;
+    justify-content: center;
 
 
     &-item:not(:last-child) {
@@ -17,8 +18,10 @@
     }
   }
 
+
   .connection {
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: black;
 
@@ -46,11 +49,15 @@
 
   .feedback {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 1920px;
-    height: 134px;
     background: #303030;
+
+    &-wrapper {
+      width: 1920px;
+      height: 134px;
+    }
 
     &-title {
       font-family: UZSans;
@@ -61,6 +68,11 @@
       color: $white;
       text-align: center;
       padding-top: 30px;
+    }
+
+    &-arrow-wrap {
+      display: flex;
+      justify-content: center;
     }
 
     &-arrow {
