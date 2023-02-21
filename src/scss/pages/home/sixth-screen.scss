@@ -48,12 +48,16 @@
         align-items: center;
         margin-bottom: 20px;
 
+        .page-list-img {
+          width: 56px;
+          height: 56px;
+        }
+
         &-text {
           font-family: UZSans;
           font-size: 20px;
           font-weight: 350;
           line-height: 32px;
-          margin-left: 14px;
         }
 
       }
