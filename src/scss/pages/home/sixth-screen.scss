@@ -1,8 +1,10 @@
 .sixth-screen {
+  position: relative;
   &-inner {
     padding: 2rem $paddingLeft;
     display: flex;
     justify-content: center;
+
   }
 
   &-wrapper {
@@ -33,6 +35,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 1500px;
+
 
     &-box {
       &-position {
@@ -51,6 +55,7 @@
         .page-list-img {
           width: 56px;
           height: 56px;
+          margin-left: -2rem;
         }
 
         &-text {
@@ -64,6 +69,22 @@
       &-btn {
         @include mainButton;
       }
+    }
+
+    &-arrows {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 195rem;
+      padding: 4rem 0 2rem;
+      border-width: 1px;
+      width: 1640px;
+      left: 3rem;
+    }
+
+    &-arrow {
+      cursor: pointer;
     }
   }
 
