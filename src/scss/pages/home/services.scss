@@ -1,11 +1,13 @@
 .services {
+  position: relative;
 
 
   &-inner {
     padding: 2rem $paddingLeft;
     display: flex;
     justify-content: center;
-    position: relative;
+    margin-left: 305px;
+
   }
 
   &-wrapper {
@@ -19,6 +21,7 @@
     align-items: center;
     justify-content: space-between;
     width: 250px;
+    margin-left: 10rem;
 
 
     &-text {
@@ -40,6 +43,7 @@
   &-container {
     display: flex;
     margin-top: 25px;
+    width: 100%;
 
   }
 
@@ -69,6 +73,9 @@
     width: 305px;
     height: 420px;
     padding: 40px 48px 23px 48px;
+    position: absolute;
+    left: 80px;
+    top: 220px;
 
     &-img {
       width: 8rem;
@@ -136,43 +143,58 @@
   }
 
   &-image {
-    //background-image: url('/img/services/vectors.png');
     height: 400px;
-    margin-top: 100px;
+    background: url('/img/services/vectors.png');
+    background-size: cover;
+    position: relative;
 
     &-additional-1 {
       position: absolute;
       width: 280px;
       height: 196px;
-      left: 10px;
-      top: 600px;
+      left: 0;
+      top: 250px;
+      opacity: 0.5;
+      filter: blur(10px);
       z-index: 9;
+    }
+
+    &-turbid-1 {
+      position: absolute;
+      width: 280px;
+      height: 196px;
+      left: 0;
+      top: 250px;
     }
 
     &-main {
       position: absolute;
       width: 500px;
       height: 350px;
-      left: 825px;
-      top: 440px;
+      left: 30%;
+      top: 90px;
     }
 
     &-additional-2 {
       position: absolute;
       width: 280px;
       height: 196px;
-      left: 1640px;
-      top: 460px;
+      right: 0;
+      top: 110px;
+      opacity: 0.5;
+      filter: blur(10px);
       z-index: 9;
     }
 
-    &-vectors {
+    &-turbid-2 {
       position: absolute;
-      width: 1919px;
-      height: 239.97px;
-      left: -2px;
-      top: 520px;
+      width: 361px;
+      height: 234px;
+      right: 0;
+      top: 110px;
+      opacity: 0.9;
     }
+
   }
 
   &-lower {
@@ -181,6 +203,7 @@
     justify-content: space-between;
     margin-right: 400px;
     margin-bottom: 70px;
+    margin-top: 100px;
   }
 
   &-name {
@@ -311,6 +334,8 @@
 
   .bitrix-gallery {
     display: flex;
+    margin-left: 10rem;
+    margin-top: 50px;
 
     &-item {
       max-width: 305px;
@@ -323,4 +348,5 @@
   }
 
 }
+
 
