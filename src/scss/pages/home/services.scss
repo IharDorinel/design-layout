@@ -2,7 +2,7 @@
   position: relative;
 
 
-  &-inner {
+  &-wrapper {
     padding: 2rem $paddingLeft;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
 
   }
 
-  &-wrapper {
+  &-inner {
     @include widthContainer;
     display: flex;
     flex-direction: column;

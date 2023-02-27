@@ -8,6 +8,12 @@ header{
     padding: 2rem $paddingLeft;
     grid-template-columns: 1fr 3fr 1fr;
     background-color: $white;
+
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     .header-logo{
         img{
             width: 20rem;
@@ -24,14 +30,36 @@ header{
             justify-content: center;
             align-items: center;
             list-style-type: none;
+
+            @media screen and (max-width: 1024px) {
+                    display: none;
+            }
         }
     }
     .header-phone{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: -200px;
+
+        @media screen and (max-width: 750px) {
+            margin-right: -70px;
+        }
+
         &-icon{
            height: 3rem;
+        }
+        &-text{
+            font-family: UZSans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 18px;
+            color: $cyan;
+
+            @media screen and (max-width: 400px) {
+                display: none;
+            }
         }
         &-arrow{
             margin-left: 2rem;
@@ -43,6 +71,16 @@ header{
     }
     .header-menu-item-arrow{
         padding-left: 2rem;
+    }
+
+    .header-menu-burger {
+        width: 16px;
+        height: 12px;
+        display: none;
+
+        @media screen and (max-width: 1024px) {
+            display: block;
+        }
     }
 
 }
