@@ -3,12 +3,19 @@
     padding: 2rem $paddingLeft;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 1024px) {
+      padding: 2rem 20px;
+    }
+
   }
   &-wrapper {
     @include widthContainer;
   }
   &-subtitle {
     padding-top: 2rem;
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
     li {
       align-self: center;
       font-size: 2.7rem;
@@ -33,6 +40,10 @@
     align-items: center;
     flex-direction: row;
     gap: 5rem;
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+      align-items: center;
+    }
     &-img{
         img{
           height: 40rem;
@@ -42,6 +53,9 @@
         }
     }
     &-text{
+      @media screen and (max-width: 400px) {
+        text-align: center;
+      }
       h2{
         margin-bottom: 3rem;
       }
@@ -52,5 +66,8 @@
   }
   &-item:nth-child(2n){
     flex-direction: row-reverse;
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+    }
   }
 }

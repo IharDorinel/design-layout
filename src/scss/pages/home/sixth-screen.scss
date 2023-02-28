@@ -13,6 +13,9 @@
 
   &-subtitle {
     padding-top: 2rem;
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
     li {
       align-self: center;
       font-size: 2.7rem;
@@ -25,27 +28,38 @@
   }
   &-tagline {
     font-family: UZSans;
-    font-size: 70px;
+    font-size: 10rem;
     font-weight: 350;
     line-height: 70.72px;
     margin-bottom: 3rem;
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
   }
 
   &-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1500px;
-
+    @media screen and (max-width: 400px) {
+     justify-content: center;
+    }
 
     &-box {
+      display: flex;
+      flex-direction: column;
+
+
       &-position {
         font-family: UZSans;
-        font-size: 25px;
+        font-size: 5rem;
         font-weight: 500;
-        line-height: 30px;
+        line-height: 8rem;
         margin-bottom: 20px;
         margin-right: 20px;
+        @media screen and (max-width: 800px) {
+          font-size: 8rem;
+        }
       }
 
       &-point {
@@ -61,9 +75,14 @@
 
         &-text {
           font-family: UZSans;
-          font-size: 20px;
+          font-size: 4rem;
           font-weight: 350;
-          line-height: 32px;
+          line-height: 8rem;
+          @media screen and (max-width: 800px) {
+            font-size: 6rem;
+            text-align: center;
+            margin-top: 15px;
+          }
         }
 
       }
@@ -71,6 +90,20 @@
         @include mainButton;
       }
     }
+
+    &-box:last-child {
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
+
+    &-box:not(:first-child) {
+      @media screen and (max-width: 400px) {
+        display: none;
+
+      }
+    }
+
 
     &-arrows {
       position: absolute;
@@ -82,6 +115,9 @@
       border-width: 1px;
       width: 1640px;
       left: 3rem;
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
     }
 
     &-arrow {
@@ -91,10 +127,14 @@
 
   &-lowStat {
     font-family: UZSans;
-    font-size: 20px;
+    font-size: 4rem;
     font-weight: 350;
     line-height: 32px;
     margin-top: 30px;
+
+    @media screen and (max-width: 400px) {
+      text-align: center;
+    }
   }
 
 }

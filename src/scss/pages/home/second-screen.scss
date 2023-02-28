@@ -3,6 +3,9 @@
     padding: 2rem $paddingLeft;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 1024px) {
+      padding: 2rem 43px;
+    }
     &.appeal-inner {
       background-image: (url(@img/home/second-screen-bg.jpg));
       background-size: 200%;
@@ -14,6 +17,9 @@
   }
   &-subtitle {
     padding-top: 2rem;
+    @media screen and (max-width: 400px) {
+      text-align: center;
+    }
     li {
       align-self: center;
       font-size: 2.7rem;
@@ -27,12 +33,17 @@
     padding: 3rem 0 5rem;
     h2 {
       color: $cyan;
+      text-align: center;
     }
     &-wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 10rem;
+      @media screen and (max-width: 400px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
     &-item {
       display: flex;

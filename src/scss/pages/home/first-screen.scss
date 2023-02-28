@@ -9,7 +9,8 @@
 
     @media screen and (max-width: 1024px) {
       overflow: hidden;
-
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
   &-wrapper {
@@ -84,6 +85,9 @@
     &-item {
       display: flex;
       gap: 5rem;
+      @media screen and (max-width: 400px) {
+        flex-direction: column;
+      }
       &-ico {
         overflow: hidden;
         border-radius: 2.5rem;
@@ -136,64 +140,21 @@
     }
   }
   }
+  &-rectangles {
+    display: none;
+    @media screen and (max-width: 400px) {
+      display: flex;
+    }
+
+    &-item {
+      width: 32px;
+      height: 4px;
+    }
+  }
   &-separator{
     @include separator;
   }
 }
 
-// .first-screen-facts {
-//   @include widthContainer;
-//   padding: 3rem $paddingLeft 3rem;
-//   display: flex;
-//   justify-content: space-between;
-//   gap: 5rem;
-//   &-item {
-//     display: flex;
-//     gap: 5rem;
-//     &-ico {
-//       overflow: hidden;
-//       border-radius: 2.5rem;
-//       position: relative;
-//       width: 20rem;
-//       height: 20rem;
-//       &-bg {
-//         position: absolute;
-//         z-index: 2;
-//         width: 100%;
-//         height: 100%;
-//         background-color: $blue;
-//         opacity: 0.1;
-//         transition: opacity 200ms ease-in;
-//       }
-//       img {
-//         position: absolute;
-//         z-index: 1;
-//         object-fit: cover;
-//         transform: rotate(-12deg) scale(2.1);
-//         top: 8%;
-//         transition: transform 200ms ease-in;
-//       }
-//     }
-//     &-text {
-//       display: flex;
-//       align-items: center;
-//       font-size: 2.5rem;
-//       transition: transform 200ms ease-in;
-//     }
-//     &:hover {
-//       .first-screen-facts-item-ico {
-//         .first-screen-facts-item-ico-bg {
-//           opacity: 0;
-//         }
-//         img {
-//           transform: rotate(-6deg) scale(2.3);
-//           top: 8%;
-//         }
-//       }
-//       .first-screen-facts-item-text {
-//         transform: scale(1.1);
-//       }
-//     }
-//   }
-// }
+
 
